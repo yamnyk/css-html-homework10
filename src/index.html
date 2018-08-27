@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<audio src="audio/track1.mp3" autoplay></audio>
+<audio autoplay  id="sound_tag" src="audio/track1.mp3"></audio>
 <div class="fade"></div>
 <section class="sw-back">
     <p class="text">
@@ -17,5 +17,10 @@
         He comes - Javascript. Lord of untyped data and components, he does not give up technical tasks "to do nicely" and not to be afraid of calculations on the side of the user. But he goes not alone, with him 3 of his faithful friends: Jquery, React and Node.js.
     </p>
 </section>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#sound_tag')[0].play();
+    });
+</script>
 </body>
 </html>
