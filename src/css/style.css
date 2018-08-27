@@ -6,7 +6,7 @@ body {
 .sw-back {
     perspective: 200px;
     overflow: hidden;
-    height: calc(100vh - 6vh);
+    height: 100vh;
 }
 
 .text {
@@ -37,7 +37,7 @@ body {
 }
 
 @keyframes animateCrawl {
-    0%   { transform: rotateX(25deg) translateY(290px); }
+    0%   { transform: rotateX(25deg) translateY(303px); }
     90%  { opacity: 1;}
     100% { transform: rotateX(25deg) translateY(-350px); opacity: 0;}
 }
@@ -45,4 +45,8 @@ body {
 .audio {
     background: #111;
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
